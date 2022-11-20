@@ -1,0 +1,94 @@
+body {
+  overflow: hidden;
+}
+
+.background-container {
+  background-image: linear-gradient(tomato, salmon);
+  width: 100%;
+  height: 100vh;
+}
+
+.calendar-container {
+  width: 55%;
+  top: 150px;
+  left: 250px;
+  margin: auto;
+  position: absolute;
+  padding-top: 200px;
+}
+
+.weekdays-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  background: #fff;
+}
+
+.weekdays-container .week-day {
+  color: #999;
+}
+
+.calendar {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.calendar .week {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+button {
+  background: #fff;
+  border: none;
+}
+
+.date-pick-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.date-pick-container span {
+  font-size: 20px;
+}
+
+.date-pick-container svg {
+  border-radius: 100px;
+  background: #e8e8e8;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.today {
+  background-color: #fd6cbb;
+  color: #000;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.selected {
+  border: 1px solid #777;
+  border-radius: 20px;
+}
+
+.calendar .week .date {
+  width: 30px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
